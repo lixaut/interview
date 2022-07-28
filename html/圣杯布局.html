@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣杯布局</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .bd {
+            padding: 0 200px;
+        }
+        .flo {
+            float: left;
+        }
+        .main {
+            width: 100%;
+            background-color: skyblue;
+        }
+        .left {
+            width: 200px;
+            background-color: lightgreen;
+            margin-left: -100%;
+            position: relative;
+            left: -200px;
+        }
+        .right {
+            width: 200px;
+            background-color: pink;
+            margin-left: -200px;
+            position: relative;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>圣杯布局</header>
+    <div class="bd">
+        <div class="main flo">main</div>
+        <div class="left flo">left</div>
+        <div class="right flo">right</div>
+    </div>
+</body>
+</html>
