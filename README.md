@@ -7,6 +7,7 @@
 - [组件通信的六种方式](#组件通信的六种方式)
 - [事件event](#事件event)
 - [类和类的继承](#类和类的继承)
+- [函数的定义和调用](#函数的定义和调用)
 
 ## 1.页面导入样式时，使用link和@import有什么区别？
 
@@ -217,4 +218,30 @@ Vue.prototype.$bus = this
 
 5. constructor里面的this指向实例对象，方法里面的this指向这个方法的调用者
 
-##
+## 函数的定义和调用
+
+1. 自定义函数（命名函数）
+
+```js
+function fn() {}
+```
+
+2. 函数表达式（匿名函数）
+
+```js
+var fun = function() {}
+```
+
+3. 利用`new Function('参数1', '参数2', '函数体')`
+
+```js
+var f = new Function('a', 'b', 'console.log(a + b)')
+f(1, 2)
+```
+
+4. 所有函数都是 Function 的实例（对象）
+
+```js
+console.dir(f)
+console.log(f instanceof Object)
+```
