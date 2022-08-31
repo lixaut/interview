@@ -11,6 +11,7 @@
 - [函数的调用](#函数的调用)
 - [this的指向](#this的指向)
 - [改变this的指向](#改变this的指向)
+- [](#)
 
 ## 1.页面导入样式时，使用link和@import有什么区别？
 
@@ -322,3 +323,21 @@ Math.max.apply(Math, arr)
 ```
 
 3. bind方法
+
+    * 不会调用函数
+    * 改变函数的this指向
+    * 返回由原函数和指定参数改造后的函数
+    * 应用：有的函数不需要立即调用，又想改变函数内部的this指向
+
+```js
+btn.onclick = function() {
+    // this指向btn
+    this.disabled = true  
+    setTimeout(function() {
+        // 定时器里面的this指向window
+        this.disabled = false
+    }.bind(this), 3000)
+}
+```
+
+## 
