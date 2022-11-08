@@ -2,7 +2,7 @@
 
 
 
-### # transition（过渡）
+### 1、transition（过渡）
 
 语法：
 
@@ -18,7 +18,7 @@ transition: all, 1s, linear, .5s;
 
 
 
-### # animation（动画）
+### 2、animation（动画）
 
 语法：
 
@@ -49,7 +49,7 @@ animation: aniName, 1s, linear, 1s, infinite, alternate;
 
 
 
-### # transform（状态转换）
+### 3、transform（状态转换）
 
 语法：
 
@@ -92,7 +92,7 @@ skewY(20deg);
 
 
 
-### # 选择器
+### 4、选择器
 
 几个常用的 css3 选择器
 
@@ -105,7 +105,7 @@ p::before;
 p::after;
 ```
 
-### # box-shadow（阴影）
+### 5、box-shadow（阴影）
 
 一个元素可同时设置几个不同的阴影，inset 为内阴影，outset 为外阴影
 
@@ -126,7 +126,7 @@ box-shadow:
 
 
 
-### # border（边框）
+### 6、border（边框）
 
 边框图片：
 
@@ -142,6 +142,92 @@ border-image-outset: 0;  /* 边框图像可超出边框盒的大小 */
 
 ```css
 border-radius: 左上, 右上, 右下, 左下;
+```
+
+
+
+### 7、文字
+
+单行文本超出省略号：
+
+```css
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+```
+
+多行文本超出省略号：
+
+```css
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+```
+
+
+
+### 8、颜色
+
+语法：
+
+```css
+color: rgba(12, 34, 45, .5)
+```
+
+
+
+### 9、渐变
+
+对角线性渐变：
+
+```css
+background: linear-gradient(to right bottom, red, green)
+```
+
+
+
+### 10、弹性布局
+
+
+
+### 11、栅格布局
+
+
+
+### 12、盒模型定义
+
+标准盒模型：元素的 width、height 包含 border 和 padding
+
+```css
+box-sizing: border-box;
+```
+
+IE 盒模型：元素的 width、height 不包含 border 和 padding
+
+```css
+box-sizing: content-box;
+```
+
+
+
+### 13、媒体查询
+
+根据不同的媒体屏幕尺寸，指定特定的样式
+
+```css
+@media screen and (max-width: 960px) and (min-width: 500px) {
+    body: {
+        font-size: 12px;
+    }
+}
+
+@media screen, print and (max-width: 960px) and (min-width: 500px) {
+    body: {
+        font-size: 12px;
+    }
+}
 ```
 
 
