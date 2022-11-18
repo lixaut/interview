@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 200px;
+  padding-left: 100px;
+  padding-right: 150px;
+  background-color: #eee;
+}
+.container .center {
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  float: left;
+}
+.container .left {
+  height: 100%;
+  width: 100px;
+  background-color: lightgreen;
+  float: left;
+  position: relative;
+  left: -100px;
+  margin-left: -100%;
+}
+.container .right {
+  height: 100%;
+  width: 150px;
+  background-color: lightcoral;
+  float: left;
+  margin-right: -150px;
+}
+
+#main {
+  float: left;
+  width: 100%;
+  height: 200px;
+}
+#main .inner {
+  height: 100%;
+  margin: 0 100px;
+  background-color: lightblue;
+}
+
+#left {
+  height: 200px;
+  width: 100px;
+  float: left;
+  background-color: rgb(140, 219, 233);
+  margin-left: -100%;
+}
+
+#right {
+  height: 200px;
+  width: 100px;
+  float: left;
+  background-color: rgb(243, 241, 130);
+  margin-left: -100px;
+}
+
+.twoSide1 {
+  height: 200px;
+}
+.twoSide1 .left {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background-color: rgb(163, 107, 107);
+}
+.twoSide1 .right {
+  height: 100%;
+  margin-left: 200px;
+  background-color: rgb(89, 64, 64);
+}
+
+.brc {
+  height: 200px;
+}
+.brc .left {
+  height: 100%;
+  width: 300px;
+  float: left;
+  background-color: rgb(160, 112, 50);
+}
+.brc .right {
+  overflow: hidden;
+  height: 100%;
+  background-color: rgb(222, 138, 107);
+}
+
+.flex {
+  height: 200px;
+  display: flex;
+}
+.flex .left {
+  height: 100%;
+  width: 200px;
+  background-color: rgb(229, 219, 111);
+}
+.flex .right {
+  height: 100%;
+  flex: 1;
+  background-color: rgb(196, 225, 131);
+}
+
+.abso {
+  position: relative;
+  height: 200px;
+}
+.abso .left {
+  position: absolute;
+  height: 100%;
+  width: 150px;
+  background-color: rgb(227, 93, 93);
+}
+.abso .right {
+  height: 100%;
+  margin-left: 150px;
+  background-color: rgb(163, 87, 87);
+}
+
+#abso {
+  position: relative;
+  height: 200px;
+}
+#abso .left {
+  width: 100px;
+  height: 100%;
+  background-color: rgb(112, 230, 254);
+}
+#abso .right {
+  position: absolute;
+  height: 100%;
+  left: 100px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(93, 214, 155);
+}
+
+.tran {
+  position: relative;
+  height: 200px;
+  background-color: rgb(251, 176, 176);
+}
+.tran .inner {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+}
+
+.auto {
+  height: 200px;
+  position: relative;
+  background-color: rgb(196, 118, 118);
+}
+.auto .inner {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>常见布局结构</title>
+  <link rel="stylesheet" href="./layout.css">
+</head>
+<body>
+  <h3>圣杯布局</h3>
+  <div class="container">
+    <div class="center"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <h3>双飞翼布局</h3>
+  <div id="main">
+    <div class="inner"></div>
+  </div>
+  <div id="left"></div>
+  <div id="right"></div>
+
+  <h3>两栏布局（5种方法）</h3>
+  <h4><i>（1）float + margin-left</i></h4>
+  <div class="twoSide1">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <h4><i>（2）float + BFC</i></h4>
+  <div class="brc">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <h4><i>（3）flex:1</i></h4>
+  <div class="flex">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <h4><i>（4）absolute + margin-left</i></h4>
+  <div class="abso">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <h4><i>（5）absolute + left</i></h4>
+  <div id="abso">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <h3>水平垂直居中定位（4 种方法）</h3>
+  <h4><i>（1）absolute + transform</i></h4>
+  <div class="tran">
+    <div class="inner"></div>
+  </div>
+
+  <h4><i>（2）absolute + margin-auto</i></h4>
+  <div class="auto">
+    <div class="inner"></div>
+  </div>
+
+  <h4><i>（3）第一种方法的百分比替换为具体值（内盒子宽高的一半）</i></h4>
+  <h4><i>（4）flex</i></h4>
+</body>
+</html>
